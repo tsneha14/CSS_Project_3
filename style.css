@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-card {
+    display: grid;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 1440px;
+    height: 500px;
+    margin: 100px 400px;
+}
+
+.image img {
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content {
+    padding: 0px 10px;
+    margin: 0px 10px;
+    height: 450px;
+}
+
+.content h1 {
+    font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: hsl(212, 21%, 14%);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.content h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: hsl(228, 12%, 48%);
+}
+
+.content p {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 20px;
+}
+
+.rate {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.rate .big {
+    font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+
+.rate .strike {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+/* 
+@media screen {
+    body {
+        min-height: 50vh;
+    }
+
+    .main-card {
+        width: 400px;
+        grid-template-rows: 200px 200px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+} */
